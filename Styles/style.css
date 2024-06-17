@@ -1,0 +1,365 @@
+:root{
+    --section-width:300px;
+    --section-height:400px;
+    --section-color: salmon;
+    --section-border: rgb(105, 156, 193);
+    --section-border-radius: 50px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+ background-color:  peachpuff;
+}
+
+/* Header Styling*/
+
+.header {
+    display: flex;
+    justify-content: space-between; /* This will push the h1 and nav to opposite ends */
+    align-items: center; /* Align items vertically in the middle */
+    background-color: salmon; /* Example background color */
+    padding: 10px; /* Add some padding around the navbar */
+}
+
+.header h1 {
+    font-size: 24px; /* Adjust the size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+.header nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Make the list items sit next to each other horizontally */
+    gap: 20px; /* Space between the list items */
+}
+
+.header nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: aquamarine; /* Change link color */
+}
+
+/**
+
+Flexbox is one-dimensional (either a row or a column) and is best suited for laying out items within a container along a single axis.
+Grid is two-dimensional, allowing both rows and columns to be defined, which provides greater flexibility in creating complex layouts.
+Border is not a layout technique but rather a styling feature used to define the visual edges of elements.
+
+**/
+
+/* .section1 {
+
+    font-size: 1rem;
+    background-color: bisque;
+    // Box Model 
+    width: 300px;
+    height: 100px;
+    padding: 12px;
+    border: 4px solid black;
+    margin: 0;
+
+}*/
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 10px;
+
+
+}
+
+.section1{
+    
+    font-size: 1rem;
+    background-color: var(--section-color);
+    padding: 12px;
+    border: 4px solid  rgb(105, 156, 193);
+    border-radius: var(--section-border-radius);
+    margin: 0;
+    width: var(--section-width);
+    height: var(--section-height);
+}
+
+
+.section2 {
+    
+    font-size: 1rem;
+    background-color: var(--section-color);
+    padding: 12px;
+    border: 4px solid  rgb(105, 156, 193);;
+    margin: 0;
+    border-radius: var(--section-border-radius);
+    width: var(--section-width);
+    height: var(--section-height);
+}
+
+.section3{
+    font-size: 1rem;
+    background-color: var(--section-color);
+    padding: 12px;
+    border: 4px solid  rgb(105, 156, 193);;
+    margin: 0;
+    border-radius: var(--section-border-radius);
+    width: var(--section-width);
+    height: var(--section-height);
+}
+
+
+.section1 h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-display: 0.5rem;
+}
+
+.section2 h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-display: 0.5rem;
+
+}
+
+.section2 aside h4{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+
+.section2 aside ul{
+
+    display: flex;
+    list-style-type: none;
+    gap: 2px;
+}
+
+.section2 aside ul a{
+
+    text-decoration: none;
+    color:chocolate ;
+}
+
+.section2 h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-display: 0.5rem;
+
+}
+
+.worldMap{
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+
+}
+.worldMap img{
+
+    margin-left: 50px;
+    border:3px solid greenyellow;
+    border-radius: 50px;
+
+}
+.worldMap p{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 0.2 rem;
+ padding: 50px 55px;
+}
+
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between form elements */
+    max-width: 500px; /* Optional: Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add some padding around the form */
+    background-color: salmon; /* Optional: Background color for the form */
+    border-radius: 8px; /* Optional: Rounded corners for the form */
+    box-shadow: 0 4px 6px plum; /* Optional: Shadow for depth */
+}
+
+.myForm label {
+    display: block; /* Ensure labels take up the full width */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.myForm input[type="text"],
+.myForm input[type="email"],
+.myForm input[type="password"],
+.myForm input[type="number"],
+.myForm textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Add some padding inside the inputs */
+    border: 1px solid #ccc; /* Border around the inputs */
+    border-radius: 4px; /* Rounded corners for the inputs */
+}
+
+.myForm button {
+    padding: 10px 20px; /* Larger padding for the submit button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.myForm fieldset {
+    margin-bottom: 20px; /* Space between fieldsets */
+}
+
+.myForm legend {
+    margin-bottom: 10px; /* Space between legend and controls */
+}
+
+
+.audCntrl{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row: auto;
+    grid-template-rows: 1fr ;
+
+}
+
+.audCntrl h1{
+
+    align-content: center;
+    padding-bottom: 20px;
+    padding-left: 120px;
+}
+.audCntrl audio{
+    align-content: center;
+    padding-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.vidCntrl {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row: auto;
+    grid-template-rows: 1fr ;
+
+}
+
+.vidCntrl h1{
+    align-content: center;
+    padding-bottom: 20px;
+    padding-left: 120px;
+
+}
+
+.vidCntrl video{
+    align-content: center;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.emdCntrl{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row: auto;
+    grid-template-rows: 1fr ;
+}
+
+.emdCntrl h1{
+    align-content: center;
+    padding-bottom: 20px;
+    padding-left: 120px;
+}
+
+.tbl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+}
+
+
+
+.tbl table {
+    width: 100%; /* Make the table responsive */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 20px 0; /* Add some margin around the table */
+}
+
+.tbl th, td {
+    text-align: center; /* Left-align the text */
+    padding: 8px; /* Add some padding inside the cells */
+    border: 1px solid #ddd; /* Add a border around the cells */
+}
+
+.tbl th {
+    background-color: salmon; /* Light grey background for headers */
+    font-weight: bold; /* Bold font weight for headers */
+    text-align: center;
+}
+
+.tbl tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row colors for better readability */
+}
+
+
+
+.tbl tfoot {
+    background-color: #ddd; /* Darker shade for the footer */
+    text-align: right; /* Right-align the footer content */
+    padding: 10px; /* More padding for the footer */
+}
+
+
+/* Footer */
+.footer {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: salmon;
+}
+
+/* Footer Text Alignment */
+.footer-text-left {
+    font-size: 15px;
+    padding-left: 20px;
+    float: right;
+    word-spacing: 1px;
+}
+
+/* Hover Effect for Menu Links */
+a.menu:hover {
+    background-color: aqua;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer a{
+    text-decoration: none;
+}
+
+
+
+
+
+  
+
+  

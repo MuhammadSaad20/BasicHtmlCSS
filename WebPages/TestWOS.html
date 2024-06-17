@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+
+    <head>
+           <!-- FOR CHRACTER ENCODING-->
+        <meta charset="utf-8" />
+        <!-- FOR responsive design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <!-- Help in SEO -->
+        <meta author="Saad" content="Html examples"/>
+        <meta name="test" description="practice html pages"/>
+        <meta name="robots" content="index, follow">
+        <!-- twiiter card, open graph tags etc-->
+        <!-- Redirect page after 3 seconds -->
+      <!--  <meta http-equiv="refresh" content="3;url=https://www.mozilla.org" /> -->
+        <title> Test Page </title>
+    </head>
+    
+    <body>
+
+        <header>            
+            <h1>Title Site</h1>
+            <nav>
+                <ol>
+                        <li>  <a href="#"> Home</a> </li>
+                        <li>  <a href="#"> Class</a> </li>
+                </ol>
+
+                <ul>
+                        <li>  <a href="#"> Home</a> </li>
+                        <li>  <a href="#"> Class</a> </li>
+                
+                </ul>
+
+            </nav>
+        </header>
+
+        <main>      
+          
+                   
+            <section>
+                <h3> Section 1 </h3>
+                <p>This is simple text!</p>
+                <p>Japanese example: ご飯が熱い。</p>
+            </section>
+            <section>
+                   <h3> Section 2 </h3>
+                   <article>
+                        <p>Semantic HTML is about using HTML elements for their intended purpose...</p>
+                        <p>By using semantic tags, we improve the accessibility and SEO of our web pages...</p>
+                   </article>
+
+                   <aside>
+                    <h4> Related Items</h4>
+                    <ul>
+                        <li> <a href="#">Test 1</a></li>
+                        <li> <a href="#">Test 2</a></li>
+                    </ul>
+                   </aside>  
+            </section>
+
+
+            <section>
+                <h3> Section 3 </h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
+            
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets, a language used to describe the style of document presentations in web development.</dd>
+            
+                    <dt>JavaScript</dt>
+                    <dd>A programming language commonly used to create interactive effects within web browsers.</dd>
+                </dl> 
+         </section>
+
+            <img src="https://plus.unsplash.com/premium_photo-1681488098851-e3913f3b1908?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" usemap="#worldmap" alt="logo" width="800" height="400">
+            <map name="worldmap">
+                    <area shape="rect" coords="34,44,270,350" alt="North America" href="north-america.html">
+                    <area shape="circle" coords="450,200,75" alt="Europe" href="europe.html">
+                    <area shape="poly" coords="600,100,700,100,700,200,600,200" alt="Asia" href="asia.html">
+
+            </map>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required></input>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required></input>
+
+                <label for="Password">Password</label>
+                <input type="password" id="password" name="password" minlength="4" required></input>
+
+                <label for="price">Price</label>
+                <input type="number" name="price" step="0.01" min="0" required></input>
+
+                <label for="zipcode">Zipcode</label>
+                <input type="text" name="zipcode" pattern="[0-9]{5}" title="Five-digit zip code" required></input>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="3" cols="6"></textarea>
+              
+                <fieldset>
+                        <!-- use label for indivual control and legent for group of controls filedset used for group of control -->
+                        <legend>selct your favourite color</legend>
+
+                        <input type="radio" name="color" value="red"   checked> Red</input>
+                        <input type="radio" name="color" value="green" > Green</input>
+                        <input type="radio" name="color" value="blue" > Blue</input>
+
+                 
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Select your favorite toppings (choose multiple):</legend>
+                    <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni </input><br>
+                    <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms </input><br>
+                    <input type="checkbox" name="toppings" value="onions"> Onions </input><br>
+                    <input type="checkbox" name="toppings" value="green_peppers"> Green Peppers </input><br>
+                  </fieldset>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male"> Male</option>
+                    <option value="female"> Female</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <h3>Audio Control</h3>
+            <audio controls>
+                <source src="https://file-examples.com/storage/fe3cb26995666504a8d6180/2017/11/file_example_MP3_1MG.mp3" type="audio/mpeg3">
+                <source src="https://file-examples.com/storage/fe3cb26995666504a8d6180/2017/11/file_example_OOG_1MG.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+
+
+            <h3>Video</h3>
+            <!-- 
+            autoplay and loop control 
+            autoplat tell whenever ready start play loop tell start over and over gain (valid for both and video and audio)
+            <video autoplay controls>
+            <audio autoplay controls>
+            <video autoplay controls loop>
+            <audio autoplay controls loop>
+
+            -->
+                <video controls width="800" height="450" poster="poster-image.jpg">
+                <source src="https://file-examples.com/storage/fe3cb26995666504a8d6180/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+                <source src="video-file.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Embedded Content</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AEnFuSQPPYg?si=J5IpYYYqWg26odxv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h3>Table</h3>
+
+            <table>
+                <caption>Employee Details</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Saad</td>
+                        <td>$3000</td>
+                        <td>Dev</td>
+                    </tr>
+                    <tr>
+                        <td>Ali</td>
+                        <td>$5000</td>
+                        <td>IT</td>
+                    </tr>
+                    <tr>
+                        <td>Mike</td>
+                        <td>$10000</td>
+                        <td>PM</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="1">Total</td>
+                        <td>$25000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+
+    </body>
+</html>
